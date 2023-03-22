@@ -534,6 +534,130 @@ img {
   pointer-events: none;
 }
 
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 72px;
+  margin-bottom: 16px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+.form-input {
+  appearance: none;
+  width: 360px;
+  height: 40px;
+  margin-top: 4px;
+  padding-left: 32px;
+  outline: transparent;
+}
+
+.form-input:focus + .form-icon {
+  border-color: var(--iris);
+  fill: var(--iris);
+}
+
+.form-label {
+  position: relative;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--lightslate);
+  appearance: none;
+}
+.form-control {
+}
+.form-icon {
+  position: absolute;
+  margin-top: 32px;
+  margin-left: 19px;
+  margin-right: 7px;
+  left: 0%;
+  top: 0%;
+}
+
+.form-checkbox {
+  appearance: none;
+}
+
+.form-label:focus {
+  border-color: var(--iris);
+}
+.modal-form-custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+}
+.checkbox-icon {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.modal-form-chexbox:checked + .modal-form-custom-checkbox {
+  background-color: var(--navyblue);
+}
+
+.modal-form-chexbox:checked + .modal-form-custom-checkbox .checkbox-icon {
+  opacity: 1;
+  fill: var(--navyblue);
+}
+
+.form-textarea {
+  width: 360px;
+  height: 120px;
+  left: 0px;
+  top: 216px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  resize: none;
+}
+.form-privacy {
+  color: var(--iris);
+  margin-left: 4px;
+}
+
+.form-group {
+  margin-bottom: 8px;
+  margin-left: 24px;
+}
+.form-btn-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.form-btn {
+  position: ;
+  text-align: center;
+  align-items: center;
+  margin-left: 120px;
+  margin-bottom: 24px;
+  padding: 16px 32px;
+  gap: 10px;
+  width: 169px;
+  height: 56px;
+  left: 635px;
+  top: 584px;
+  background: var(--iris);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 /* HW-1 */
 .box {
   margin: 0;
