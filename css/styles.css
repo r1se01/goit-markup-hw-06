@@ -386,6 +386,8 @@ img {
   margin: 0;
   padding: 0;
   height: 88px;
+  border: 1px solid var(--lightslate);
+  border-radius: 4px;
 }
 .customers-icon {
   fill: currentColor;
@@ -439,6 +441,7 @@ img {
   gap: 120px;
 }
 .social-media-title {
+  font-family: 'Roboto';
   margin: 0;
   padding: 0;
   color: var(--white);
@@ -493,7 +496,10 @@ img {
 }
 .modal {
   width: 408px;
-  min-height: 576px;
+  padding-top: 72px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
   background-color: var(--dairy);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -513,17 +519,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 24px;
-  margin-right: 24px;
   left: 0%;
-  right: 0%;
-  top: 0%;
+  right: 24px;
+  top: 24px;
   bottom: 0%;
+  background-color: transparent;
   background: var(--navyblue);
   width: 24px;
   height: 24px;
   background: var(--cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1px solid var(--cornflower);
   display: block;
   margin-left: auto;
 }
@@ -538,26 +544,16 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  margin-top: 72px;
   margin-bottom: 16px;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--navyblue);
-}
-.form-input {
-  appearance: none;
-  width: 360px;
-  height: 40px;
-  margin-top: 4px;
-  padding-left: 32px;
-  outline: transparent;
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  padding-left: 24px;
 }
 
 .form-input:focus + .form-icon {
@@ -575,6 +571,17 @@ img {
 }
 .form-control {
 }
+
+.form-input {
+  appearance: none;
+  width: 360px;
+  height: 40px;
+  margin-top: 4px;
+  padding-left: 32px;
+  outline: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+}
 .form-icon {
   position: absolute;
   margin-top: 32px;
@@ -589,6 +596,11 @@ img {
 }
 
 .form-label:focus {
+  border: 1px solid var(--iris);
+  border-color: var(--iris);
+}
+.form-input:focus {
+  border: 1px solid var(--iris);
   border-color: var(--iris);
 }
 .modal-form-custom-checkbox {
@@ -622,6 +634,8 @@ img {
   height: 120px;
   left: 0px;
   top: 216px;
+  padding-top: 8px;
+  padding-left: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
@@ -676,6 +690,49 @@ img {
   border-radius: 4px;
 }
 
+.footer-form {
+}
+.footer-form-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 16px;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.footer-form-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 24px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 8px 24px;
+  border: 1px solid var(--iris);
+  color: var(--white);
+  background: var(--iris);
+}
+.footer-form-icon {
+  display: flex;
+  fill: var(--white);
+}
+.footer-form-wrap {
+  display: flex;
+  box-sizing: border-box;
+}
+.footer-form-input {
+  box-sizing: border-box;
+  border: 1px solid var(--white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  border: 1px solid var(--iris);
+  background: var(--iris);
+}
 /* HW-1 */
 .box {
   margin: 0;
