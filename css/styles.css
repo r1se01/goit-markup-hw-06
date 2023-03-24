@@ -712,8 +712,10 @@ img {
   border: 1px solid var(--iris);
   color: var(--white);
   background: var(--iris);
+  background-image: url(../images/footertg-defs.svg);
 }
 .footer-form-icon {
+  margin-left: 16px;
   display: flex;
   fill: var(--white);
 }
