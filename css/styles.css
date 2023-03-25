@@ -438,10 +438,11 @@ img {
 .social-media {
   margin: 0;
   padding: 0;
-  gap: 120px;
+  margin-left: auto;
 }
 .social-media-title {
   font-family: 'Roboto';
+  font-weight: 500;
   margin: 0;
   padding: 0;
   color: var(--white);
@@ -455,7 +456,6 @@ img {
 }
 .hw-footer .container {
   display: flex;
-  gap: 120px;
 }
 .social-media-item:hover,
 .social-media-item:focus {
@@ -532,6 +532,7 @@ img {
   border-radius: 1px solid var(--cornflower);
   display: block;
   margin-left: auto;
+  border-radius: 50%;
 }
 
 .is-hidden {
@@ -639,6 +640,10 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 .form-privacy {
   color: var(--iris);
@@ -688,15 +693,17 @@ img {
   background: var(--iris);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 
 .footer-form {
+  margin-left: auto;
 }
 .footer-form-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   letter-spacing: 0.02em;
   color: var(--white);
 }
@@ -706,13 +713,13 @@ img {
   flex-direction: row;
   align-items: center;
   margin-left: 24px;
+  height: 40px;
   text-align: center;
   border-radius: 4px;
   padding: 8px 24px;
   border: 1px solid var(--iris);
   color: var(--white);
   background: var(--iris);
-  background-image: url(../images/footertg-defs.svg);
 }
 .footer-form-icon {
   margin-left: 16px;
@@ -724,10 +731,22 @@ img {
   box-sizing: border-box;
 }
 .footer-form-input {
+  background: transparent;
   box-sizing: border-box;
   border: 1px solid var(--white);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  height: 40px;
+  width: 264px;
+  font-size: 12px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--white);
 }
 
 .footer-form-btn:hover,
@@ -735,6 +754,20 @@ img {
   border: 1px solid var(--iris);
   background: var(--iris);
 }
+.tacbox {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--lightslate);
+  flex: none;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.form-privacy {
+  margin-left: 4px;
+}
+
 /* HW-1 */
 .box {
   margin: 0;
